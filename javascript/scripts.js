@@ -20,13 +20,14 @@ function SonifyData_audio(data_input, seconds_input){
 
 function submit_data_audio(e){
     e.preventDefault();
-    var data_input = $('#data-input').val()
-    var seconds_input = $('#seconds-input').val()
-    SonifyData_audio(data_input, seconds_input)
+    var data_input = $('#data-input').val();
+    var seconds_input = $('#seconds-input').val();
+    SonifyData_audio(data_input, seconds_input);
 }
 
 
 $(function(){
-    $('#data-play-button').on('click', submit_data_audio)
+    $('#data-play-button').on('click', submit_data_audio);
+    $('#seconds-input').val(1);
 });
 
