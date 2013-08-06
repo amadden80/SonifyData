@@ -1,8 +1,9 @@
 
-function SonifyData_audio(data_input){
+function SonifyData_audio(data_input, seconds_input){
     if (data_input.length){
         
         var data_array = (data_input).replace(/\D/g,' ').split(" ");
+        var seconds = seconds_input;
 
         var clean_data = [];
 
@@ -13,14 +14,15 @@ function SonifyData_audio(data_input){
                 }
 
         console.log("Cleaned Data: " + clean_data);
-        Sonifizer_array(clean_data, Sonifizer_Play);
+        Sonifizer_array(clean_data, Sonifizer_Play, seconds);
     }
 }
 
 function submit_data_audio(e){
     e.preventDefault();
     var data_input = $('#data-input').val()
-    SonifyData_audio(data_input)
+    var seconds_input = $('#seconds-input').val()
+    SonifyData_audio(data_input, seconds_input)
 }
 
 
