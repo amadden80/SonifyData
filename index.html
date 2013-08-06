@@ -19,13 +19,29 @@
     <!-- <link rel="shortcut icon" href="images/Fav.png"> -->
 
     <script src="javascript/jquery-2.0.3.js"></script>
-    <script src="javascript/audatar.js"></script>
+    <script src="javascript/scripts.js"></script>
+    <script src="http://www.sonifizer.com/Sonifizer.js"></script>
 
 </head>
 
 <body>
-    <h1>SonifyData</h1>
+    <br/>
+    <div class="container">
 
+        <h1 class = "five columns offset-by-two"> SonifyData </h1>
+
+        <div class="row"></div>
+
+        <form class = "five columns offset-by-two">
+            <textarea id="data-input" rows="20" cols="50">43, 62, 120, 34, 54, 98</textarea>
+            <button id="data-play-button" >Sonify</button>
+        </form>
+
+        <p class="five columns offset-by-one">
+            1. Paste in an array of numeric data<br/>
+            2. Click Sonify<br/>
+        <p>
+
+    </div>
 </body>
-
 </html>
