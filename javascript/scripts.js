@@ -21,13 +21,9 @@ function SonifyData_audio(data_input, seconds_input){
 
 function submit_data_audio(e){
     e.preventDefault();
-<<<<<<< HEAD
+
     var data_input = $('#data-input').val();
-    var seconds_input = $('#seconds-input').val();
-    SonifyData_audio(data_input, seconds_input);
-=======
-    var data_input = $('#data-input').val()
-    var seconds_input = parseFloat($('#seconds-input').val())
+    var seconds_input = parseFloat($('#seconds-input').val());
 
     if (seconds_input >10){
         $('#seconds-input').val(10);
@@ -38,8 +34,8 @@ function submit_data_audio(e){
         seconds_input = 1;
     }
 
-    SonifyData_audio(data_input, seconds_input)
->>>>>>> gh-pages
+    SonifyData_audio(data_input, seconds_input);
+
 }
 
 
